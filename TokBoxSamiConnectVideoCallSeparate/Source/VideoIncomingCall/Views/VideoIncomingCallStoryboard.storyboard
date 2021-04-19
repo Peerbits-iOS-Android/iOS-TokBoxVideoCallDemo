@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Video Incoming Call View Controller-->
+        <scene sceneID="p8w-CK-EMQ">
+            <objects>
+                <viewController storyboardIdentifier="VideoIncomingCallViewController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c2y-6X-Rjl" customClass="VideoIncomingCallViewController" customModule="Kencor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fpx-H1-Sdf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZQ-KT-2hP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dnv-yE-HWa">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MV8-cQ-zF2">
+                                <rect key="frame" x="36" y="587" width="342" height="237"/>
+                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zoO-tX-efd">
+                                <rect key="frame" x="161.5" y="609" width="91" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zoO-tX-efd" secondAttribute="height" multiplier="1:1" id="hzI-X8-0t7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mushrankhan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="760-WG-Bvu">
+                                <rect key="frame" x="36" y="712" width="342" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="RpC-c8-qhf">
+                                <rect key="frame" x="62" y="755" width="290" height="49"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4o-Og-rfE">
+                                        <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
+                                        <state key="normal" image="AssetAcceptCall"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="video calling..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FoW-HN-dg5">
+                                        <rect key="frame" x="80" y="0.0" width="130.5" height="49"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizableString" value="video calling..."/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lly-PQ-mmo">
+                                        <rect key="frame" x="241.5" y="0.0" width="48.5" height="49"/>
+                                        <state key="normal" image="AssetRejectCall"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="FoW-HN-dg5" firstAttribute="width" secondItem="RpC-c8-qhf" secondAttribute="width" multiplier="0.45" id="Th4-GM-7Hr"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RuF-uF-xtE"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="760-WG-Bvu" firstAttribute="width" secondItem="MV8-cQ-zF2" secondAttribute="width" id="1xu-RX-Jbd"/>
+                            <constraint firstItem="zoO-tX-efd" firstAttribute="width" secondItem="RuF-uF-xtE" secondAttribute="width" multiplier="0.22" id="9kE-cq-M4K"/>
+                            <constraint firstItem="MV8-cQ-zF2" firstAttribute="leading" secondItem="RpC-c8-qhf" secondAttribute="leading" constant="-26" id="DZZ-lV-dtd"/>
+                            <constraint firstItem="MV8-cQ-zF2" firstAttribute="bottom" secondItem="RpC-c8-qhf" secondAttribute="bottom" constant="20" id="Rmk-Y4-r74"/>
+                            <constraint firstItem="MV8-cQ-zF2" firstAttribute="trailing" secondItem="RpC-c8-qhf" secondAttribute="trailing" constant="26" id="Rwg-Wu-Xj1"/>
+                            <constraint firstItem="RpC-c8-qhf" firstAttribute="top" secondItem="760-WG-Bvu" secondAttribute="bottom" constant="22" id="S4u-Bu-zY1"/>
+                            <constraint firstItem="SZQ-KT-2hP" firstAttribute="top" secondItem="Fpx-H1-Sdf" secondAttribute="top" id="SyC-D4-D5O"/>
+                            <constraint firstItem="760-WG-Bvu" firstAttribute="centerX" secondItem="RpC-c8-qhf" secondAttribute="centerX" id="aky-AZ-0bU"/>
+                            <constraint firstItem="zoO-tX-efd" firstAttribute="centerX" secondItem="RpC-c8-qhf" secondAttribute="centerX" id="eE1-Vl-a5x"/>
+                            <constraint firstItem="RpC-c8-qhf" firstAttribute="width" secondItem="RuF-uF-xtE" secondAttribute="width" multiplier="0.7" id="eYM-cx-NV5"/>
+                            <constraint firstItem="SZQ-KT-2hP" firstAttribute="leading" secondItem="RuF-uF-xtE" secondAttribute="leading" id="hC0-cz-iEL"/>
+                            <constraint firstItem="760-WG-Bvu" firstAttribute="top" secondItem="zoO-tX-efd" secondAttribute="bottom" constant="12" id="lNM-3a-eaZ"/>
+                            <constraint firstItem="RuF-uF-xtE" firstAttribute="bottom" secondItem="RpC-c8-qhf" secondAttribute="bottom" constant="58" id="lVL-Dy-5fO"/>
+                            <constraint firstItem="SZQ-KT-2hP" firstAttribute="trailing" secondItem="RuF-uF-xtE" secondAttribute="trailing" id="os1-zH-aRF"/>
+                            <constraint firstAttribute="bottom" secondItem="SZQ-KT-2hP" secondAttribute="bottom" id="sFl-8Q-JVV"/>
+                            <constraint firstItem="MV8-cQ-zF2" firstAttribute="top" secondItem="zoO-tX-efd" secondAttribute="top" constant="-22" id="vhl-mz-GcN"/>
+                            <constraint firstItem="RpC-c8-qhf" firstAttribute="centerX" secondItem="RuF-uF-xtE" secondAttribute="centerX" id="yKG-OX-U7J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAccept" destination="l4o-Og-rfE" id="45n-fP-TX2"/>
+                        <outlet property="btnReject" destination="Lly-PQ-mmo" id="6pl-XG-Wua"/>
+                        <outlet property="cntrBottomCallingView" destination="lVL-Dy-5fO" id="t1h-yU-kom"/>
+                        <outlet property="imgViewCallingUser" destination="zoO-tX-efd" id="Wlv-Lj-gqQ"/>
+                        <outlet property="lblCallingUserName" destination="760-WG-Bvu" id="fLc-ob-Gm0"/>
+                        <outlet property="viewBackBlur" destination="SZQ-KT-2hP" id="1Od-4Y-4Gg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nfd-od-lUp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221.73913043478262" y="60.9375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AssetAcceptCall" width="49" height="49"/>
+        <image name="AssetRejectCall" width="48.5" height="49"/>
+    </resources>
+</document>
